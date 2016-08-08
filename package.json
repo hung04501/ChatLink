@@ -1,0 +1,24 @@
+{
+  "name": "Uploadbase64",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "emojify.js": "^1.1.0",
+    "express": "*",
+    "google-auth-library": "^0.9.7",
+    "googleapis": "^4.0.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.11",
+    "multer": "*",
+    "nodemon": "^1.9.2",
+    "refresh-token": "^0.1.0",
+    "request": "^2.70.0",
+    "request-ip": "^1.2.2",
+    "socket.io": "*",
+    "underscore": "^1.8.3"
+  },
+  "author": "developer"
+}

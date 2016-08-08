@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat Room</title>
+	<meta name="viewport" content="width=device-width">
+	<link id="favicon" rel="icon"/>
+	<link rel="stylesheet" href="./emotion/jquery.emojiarea.css">
+	<link rel="stylesheet" href="./emotion/fontello/css/fontello.css">
+	<link rel="stylesheet" href="./emotion/css/basic/emojify.css" />
+	<link rel="stylesheet" href="./emotion/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./bootstrap/css/custom.css" />
+	<link rel="stylesheet" href="./emotion/chatClient.css" />
+	
+	<script src="./emotion/emojify.js"></script>
+	<script src="http://192.168.100.113:4000/socket.io/socket.io.js"></script>
+	<script src="./emotion/jquery-latest.min.js"></script>
+	<script src="./emotion/jquery-colors.min.js"></script>
+	<script src="./emotion/jquery.emojiarea.js"></script>
+	<script src="./emotion/packs/basic/emojis.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./emotion/jquery.emojiarea.js"></script>
+	<script src="./emotion/packs/basic/emojis.js"></script>
+	<script src="./emotion/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+	<script src="./emotion/chatClient.js"></script>
+
+  </head>
+  <body id="site-body">
+  <div class="container">
+	<div class="row">
+		 <div class="col-sm-12">
+			  <div id="header">
+				<h1>WELCOME TO CHAT ROOM <br/></h1>
+			  Your network IP is: <h2 id="list"></h2> 
+			  </div>
+		</div>
+	</div>
+  
+  <div class="row">
+    <div class="col-sm-2">
+		<a id="expand_user" href="#" class="toggle-icon glyphicon glyphicon-collapse-up" style="text-decoration:none;display:none"></a>
+	  <div id="listuser" >
+		  <p style="background-color:#c7edfc;">UserName<p>
+	  </div>
+	</div>
+	<div class="col-sm-10">
+	  <div class="container_chat" id="default-skin-demo">
+		<div class="skype-parent">
+		  <div class="message">
+			<div></div>
+			<div><p></p></div>
+			<div></div>
+		  </div>
+		</div> 
+	  </div>
+	</div>
+   </div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div  id="statusTyping"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-10">
+			<div style="clear:both;float:right" id="ui-input">
+			
+				<input type="hidden" id="ipuser" name="ipclient" >
+			  <input id="msg" name="message" placeholder="chat here" /><button id="btnsend" disabled></button>
+		<!-- 	  <input id="msg_room" name="message"/><button id="btnsend_room">Send Room</button> -->
+			  <input type="hidden" id="datechat" name ="timechat">
+			  
+			</div>
+		</div>
+	</div>
+  </body>
+  
+</html>
+
+
